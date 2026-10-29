@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bong Amy's Funny Website</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: linear-gradient(135deg, #ffb6d9, #c9b6ff, #b6f0ff);
+            color: #4a245e;
+        }
+
+        header {
+            padding: 35px 15px;
+            background: rgba(255, 255, 255, 0.45);
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 18px;
+        }
+
+        .card {
+            background: white;
+            max-width: 550px;
+            margin: 30px auto;
+            padding: 25px;
+            border-radius: 25px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .profile {
+            width: 100%;
+            max-width: 350px;
+            height: auto;
+            border-radius: 20px;
+            border: 5px solid #ffb6d9;
+        }
+
+        .joke {
+            font-size: 20px;
+            line-height: 1.6;
+        }
+
+        button {
+            background: #ff69b4;
+            color: white;
+            border: none;
+            padding: 14px 24px;
+            border-radius: 30px;
+            font-size: 17px;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        button:hover {
+            background: #e84b9b;
+            transform: scale(1.05);
+        }
+
+        #surprise {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        footer {
+            padding: 25px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>😂 Welcome to Bong Amy's World! 😂</h1>
+        <p class="subtitle">The legendary queen of sleeping! 👑💤</p>
+    </header>
+
+    <div class="card">
+        <h2>Meet Bong Amy! 💖</h2>
+
+        <img
+            src="126316806_847929022707394_3962175949810413806_n.jpg"
+            alt="Bong Amy"
+            class="profile"
+        >
+
+        <p class="joke">
+            ⚠️ WARNING ⚠️<br>
+            Move on chop sl ke mene eng! 🚨
+        </p>
+
+        <p>
+            Official hobbies:<br>
+            💤 Sleeping<br>
+            📱 Scrolling on her phone<br>
+            🍜 Thinking about food<br>
+            😴 Sleeping again!
+        </p>
+
+        <button onclick="showSurprise()">
+            Don't Click This! 🤫
+        </button>
+
+        <p id="surprise"></p>
+    </div>
+
+    <footer>
+        Made with ❤️ and a little bit of teasing for Bong Amy 😂
+    </footer>
+
+    <script>
+        function showSurprise() {
+            const messages = [
+                "🚨 ALERT! Chop sl ke mnek eng!",
+                "😂 Her bed misses her when she leaves!",
+                "🛁 Breaking news: Showering is still pending!",
+                "👑 All hail the Queen of Laziness!",
+                "💖 Just kidding! Bong Amy is the best!"
+            ];
+
+            const randomIndex = Math.floor(
+                Math.random() * messages.length
+            );
+
+            document.getElementById("surprise").textContent =
+                messages[randomIndex];
+        }
+    </script>
+
+</body>
+</html>
